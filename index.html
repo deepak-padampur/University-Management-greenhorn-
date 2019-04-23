@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>notification</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <style type="text/css">
+    .container{
+        padding:20px;
+    }
+    .notificationBar{
+        list-style: none;
+        padding:0;
+        margin:0;
+        position:relative;
+    }
+    .notificationBar li{
+        margin-top: 60px;
+    }
+    .notificationBar li div{
+      margin-left:50px;
+      margin-top:-30px;
+      border: 1px solid #ddd;
+      padding:10px;
+      background-color: white;
+
+    }
+    .notificationBar li i{
+        width: 30px;
+        height: 30px;
+        display:block;
+        text-align:center;
+        line-height:30px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .notificationBar li i:after{
+        content:'';
+        width:40px;
+        height:1px;
+        position:absolute;
+        background-color: #ddd;
+        margin-top:15px;
+        z-index:-1;
+    }
+    .notificationBar:after{
+        content:'';
+        width:1px;
+        height:100%;
+        background-color: #ddd;
+        position:absolute;
+        top:4px;
+        left:15px;
+        z-index:-1;
+
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <ul class="notificationBar">
+            <li>
+                <i class="ion-checkmark"></i>
+                <div>third notification from admin goes here</div>
+            </li>
+            <li>
+                <i class="ion-paper-airplane"></i>
+                <div>Second notification from admin goes here</div>
+            </li>
+            <li>
+                <i class="ion-plus"></i>
+                <div>first notification from admin goes here</div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
